@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --version)",
+      "Bash(npm --version)",
+      "Bash(npm create vite@latest . -- --template react-ts)",
+      "Bash(npm install)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(ls \"C:\\\\Users\\\\kimch\\\\Downloads\\\\Claude_code\\\\node_modules\\\\.bin\\\\vite\"*)",
+      "Bash(pip install pymupdf)",
+      "Bash(python3 -c \":*)",
+      "Bash(python -c \"import fitz; print\\(fitz.__version__\\)\")",
+      "Bash(python -c \":*)",
+      "Bash(node -e \":*)",
+      "Bash(node -e 'var fs=require\\(\"\"fs\"\"\\);var c=fs.readFileSync\\(\"\"C:/Users/kimch/Downloads/Claude_code/src/data/standards/iso37001.ts\"\",\"\"utf8\"\"\\);var m=c.match\\(/id:.37001-/g\\);console.log\\(\"\"Total requirements:\"\",m?m.length:0\\);')",
+      "Bash(node node_modules/vite/bin/vite.js build)",
+      "Bash(npx tsc --noEmit src/data/standards/iso13485.ts)",
+      "Bash(npx tsc --noEmit src/data/standards/iso14001.ts)",
+      "Bash(npm run build)",
+      "Bash(pkill -f \"node serve.cjs\")",
+      "Bash(npx skills add benjitaylor/agentation)",
+      "Bash(npx skills add benjitaylor/agentation --yes)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(npx vite build)"
+    ]
+  }
+}

@@ -1,6 +1,42 @@
+import { useState } from 'react';
 import { ContactBgIllust } from './illustrations';
 
+// Formspree Form ID - formspree.io에서 발급받은 ID로 교체하세요
+const FORMSPREE_ID = 'xgonbqwj';
+
 export function Contact() {
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setError('');
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: 'POST',
+        body: formData,
+        headers: { Accept: 'application/json' },
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+        form.reset();
+      } else {
+        setError('전송에 실패했습니다. 잠시 후 다시 시도해 주세요.');
+      }
+    } catch {
+      setError('네트워크 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.');
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="relative py-20 sm:py-28 overflow-hidden">
       {/* SVG background */}
@@ -101,17 +137,32 @@ export function Contact() {
 
           {/* Right - Contact form */}
           <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg">
+            {submitted ? (
+              <div className="flex flex-col items-center justify-center py-16 text-center">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-5">
+                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-primary-dark mb-2">상담 신청이 접수되었습니다</h3>
+                <p className="text-gray-500 text-sm mb-6">빠른 시간 내에 연락드리겠습니다.</p>
+                <button
+                  onClick={() => setSubmitted(false)}
+                  className="text-primary hover:text-primary-dark font-semibold text-sm transition-colors"
+                >
+                  추가 문의하기
+                </button>
+              </div>
+            ) : (
             <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                alert('문의가 접수되었습니다. 빠른 시간 내에 연락드리겠습니다.');
-              }}
+              onSubmit={handleSubmit}
               className="space-y-5"
             >
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-1.5">회사명</label>
                 <input
                   type="text"
+                  name="company"
                   required
                   className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm"
                   placeholder="회사명을 입력해 주세요"
@@ -122,6 +173,7 @@ export function Contact() {
                   <label className="block text-sm font-semibold text-gray-700 mb-1.5">담당자명</label>
                   <input
                     type="text"
+                    name="name"
                     required
                     className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm"
                     placeholder="성함"
@@ -131,6 +183,7 @@ export function Contact() {
                   <label className="block text-sm font-semibold text-gray-700 mb-1.5">연락처</label>
                   <input
                     type="tel"
+                    name="phone"
                     required
                     className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm"
                     placeholder="010-0000-0000"
@@ -141,6 +194,7 @@ export function Contact() {
                 <label className="block text-sm font-semibold text-gray-700 mb-1.5">이메일</label>
                 <input
                   type="email"
+                  name="email"
                   required
                   className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm"
                   placeholder="email@example.com"
@@ -149,6 +203,7 @@ export function Contact() {
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-1.5">관심 규격</label>
                 <select
+                  name="standard"
                   className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
                 >
                   <option value="">선택해 주세요</option>
@@ -170,18 +225,24 @@ export function Contact() {
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-1.5">문의 내용</label>
                 <textarea
+                  name="message"
                   rows={4}
                   className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm resize-none"
                   placeholder="문의 내용을 입력해 주세요"
                 />
               </div>
+              {error && (
+                <p className="text-red-500 text-sm text-center">{error}</p>
+              )}
               <button
                 type="submit"
-                className="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-3.5 rounded-xl transition-colors text-sm"
+                disabled={submitting}
+                className="w-full bg-primary hover:bg-primary-dark disabled:bg-gray-400 text-white font-semibold py-3.5 rounded-xl transition-colors text-sm"
               >
-                무료 상담 신청하기
+                {submitting ? '전송 중...' : '무료 상담 신청하기'}
               </button>
             </form>
+            )}
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ export function About() {
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
                 <strong className="text-primary-dark">스탠다드싱크(StandardSync)</strong>는 ISO 국제 표준 기반의
-                경영시스템 구현 컨설팅, 심사 지원 및 사후관리 서비스를 제공하는 전문 컨설팅 기업입니다.
+                경영시스템 구현 컨설팅, 심사 지원 및 사후관리 서비스를 제공하는 전문 컨설팅 업체입니다.
               </p>
               <p>
                 품질, 환경, 안전보건, 의료기기, 화장품, 반부패, 준법, 정보보안, 인공지능, 에너지 및 ESG 등 다양한 분야의
@@ -23,19 +23,6 @@ export function About() {
               <p>
                 단순한 인증 취득을 넘어, 실질적으로 조직의 역량을 강화하고 지속 가능한 성장을 이끌어 내는 것이 스탠다드싱크의 목표입니다.
               </p>
-            </div>
-
-            {/* CEO info */}
-            <div className="mt-8 p-5 bg-primary/5 rounded-2xl border border-primary/10">
-              <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg">
-                  김
-                </div>
-                <div>
-                  <div className="font-bold text-primary-dark text-lg">김충열 대표</div>
-                  <div className="text-sm text-gray-500">이학박사(PhD) · ISO 인증 심사원 · 의료기기 RA 전문가</div>
-                </div>
-              </div>
             </div>
           </div>
 

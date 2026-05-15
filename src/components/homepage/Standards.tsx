@@ -103,9 +103,9 @@ export function Standards() {
               <div className="flex items-center gap-2 mb-2">
                 <h3 className="text-lg font-bold text-primary-dark">{std.title}</h3>
                 {std.badge && (
-                  <span className="text-[10px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full whitespace-nowrap">
+                  <a href="https://econine.kr/" target="_blank" rel="noopener noreferrer" className="text-[10px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full whitespace-nowrap hover:bg-emerald-100 transition-colors">
                     {std.badge}
-                  </span>
+                  </a>
                 )}
               </div>
               <p className="text-sm text-gray-500 leading-relaxed">{std.description}</p>

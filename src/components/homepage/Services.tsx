@@ -101,9 +101,9 @@ export function Services() {
                     <div className="text-primary">{service.icon}</div>
                     <h3 className="text-lg font-bold text-primary-dark">{service.title}</h3>
                     {service.badge && (
-                      <span className="text-[10px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full whitespace-nowrap">
+                      <a href="https://econine.kr/" target="_blank" rel="noopener noreferrer" className="text-[10px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full whitespace-nowrap hover:bg-emerald-100 transition-colors">
                         {service.badge}
-                      </span>
+                      </a>
                     )}
                   </div>
                   <p className="text-gray-500 text-sm leading-relaxed mb-4">{service.description}</p>

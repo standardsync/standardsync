@@ -35,7 +35,7 @@ export function Footer({ onPrivacy, onTerms }: FooterProps) {
               <li><a href="#services" className="hover:text-leaf-light transition-colors">인증심사 지원</a></li>
               <li><a href="#services" className="hover:text-leaf-light transition-colors">의료기기 인허가 · KGMP</a></li>
               <li><a href="#services" className="hover:text-leaf-light transition-colors">업체교육 · 사후관리</a></li>
-              <li><a href="#services" className="hover:text-leaf-light transition-colors">ESG 컨설팅</a></li>
+              <li><a href="#services" className="hover:text-leaf-light transition-colors">EcoVadis 컨설팅</a></li>
             </ul>
           </div>
 
@@ -47,7 +47,7 @@ export function Footer({ onPrivacy, onTerms }: FooterProps) {
               <li>ISO 13485 / 22716</li>
               <li>ISO 37001 / 37301</li>
               <li>ISO 27001 / 42001 / 50001</li>
-              <li>ESG</li>
+              <li>EcoVadis</li>
             </ul>
           </div>
 

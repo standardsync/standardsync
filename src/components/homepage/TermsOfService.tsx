@@ -41,7 +41,7 @@ export function TermsOfService({ isOpen, onClose }: TermsOfServiceProps) {
         <p className="mb-2">회사가 사이트를 통해 제공하는 서비스는 다음과 같습니다.</p>
         <ul className="list-disc pl-5 space-y-1">
           <li>ISO 경영시스템(ISO 9001, 14001, 45001, 13485, 22716, 37001, 37301, 27001, 42001, 50001) 컨설팅 정보 제공</li>
-          <li>ESG 경영 컨설팅 정보 제공</li>
+          <li>EcoVadis 컨설팅 정보 제공</li>
           <li>의료기기 인허가(RA) 및 KGMP 관련 정보 제공</li>
           <li>온라인 상담 신청 접수</li>
           <li>기타 회사가 정하는 서비스</li>

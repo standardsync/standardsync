@@ -62,9 +62,9 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
-    title: 'ESG 컨설팅',
-    description: '환경, 사회, 지배구조 경영을 체계적으로 구축하여 기업의 지속가능한 성장을 지원합니다.',
-    features: ['ESG 전략 수립', '환경·사회·지배구조 진단', 'ESG 보고서 작성 지원', '지속가능경영 체계 구축'],
+    title: 'EcoVadis 컨설팅',
+    description: '글로벌 공급망 지속가능성 평가 플랫폼 EcoVadis 대응을 통해 기업의 ESG 경쟁력을 강화합니다.',
+    features: ['EcoVadis 평가 대응 컨설팅', '환경·노동·윤리·조달 개선', 'CSR/지속가능성 문서화 지원', '평가 등급 향상 전략 수립'],
     illustration: EsgIllust,
   },
 ];
@@ -79,7 +79,7 @@ export function Services() {
             서비스 안내
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto">
-            ISO 경영시스템의 구축부터 인증 취득, 의료기기 인허가, ESG 컨설팅 및 사후관리까지 전 과정을 전문적으로 지원합니다.
+            ISO 경영시스템의 구축부터 인증 취득, 의료기기 인허가, EcoVadis 컨설팅 및 사후관리까지 전 과정을 전문적으로 지원합니다.
           </p>
         </div>
 

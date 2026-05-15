@@ -8,7 +8,7 @@ const reasons = [
       </svg>
     ),
     title: '다양한 규격 전문성',
-    description: '11개 이상의 ISO/ESG 규격에 대한 깊은 이해와 실무 경험을 보유하고 있어, 다중 인증도 효율적으로 진행합니다.',
+    description: '11개 이상의 ISO 규격 및 EcoVadis에 대한 깊은 이해와 실무 경험을 보유하고 있어, 다중 인증도 효율적으로 진행합니다.',
     illustration: ExpertiseIllust,
   },
   {

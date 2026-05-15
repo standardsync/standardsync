@@ -60,9 +60,9 @@ const standards = [
     color: 'from-teal-600 to-green-600',
   },
   {
-    number: 'ESG',
-    title: 'Environmental, Social & Governance',
-    description: '환경, 사회, 지배구조 측면의 지속가능경영을 체계적으로 구축하고 실천하기 위한 프레임워크',
+    number: 'EcoVadis',
+    title: '지속가능성 평가 플랫폼',
+    description: '글로벌 공급망 CSR 평가 플랫폼으로 환경, 노동·인권, 윤리, 지속가능 조달 4개 테마를 평가하는 국제 표준',
     color: 'from-emerald-700 to-green-700',
   },
 ];
@@ -85,7 +85,7 @@ export function Standards() {
             인증 규격 안내
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto">
-            스탠다드싱크는 아래 ISO 규격 및 ESG에 대한 전문 컨설팅 서비스를 제공합니다.
+            스탠다드싱크는 아래 ISO 규격 및 EcoVadis에 대한 전문 컨설팅 서비스를 제공합니다.
           </p>
         </div>
 

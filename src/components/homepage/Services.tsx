@@ -63,6 +63,7 @@ const services = [
       </svg>
     ),
     title: 'EcoVadis 컨설팅',
+    badge: 'Econine에서 진행',
     description: '글로벌 공급망 지속가능성 평가 플랫폼 EcoVadis 대응을 통해 기업의 ESG 경쟁력을 강화합니다.',
     features: ['EcoVadis 평가 대응 컨설팅', '환경·노동·윤리·조달 개선', 'CSR/지속가능성 문서화 지원', '평가 등급 향상 전략 수립'],
     illustration: EsgIllust,
@@ -99,6 +100,11 @@ export function Services() {
                   <div className="flex items-center gap-3 mb-3">
                     <div className="text-primary">{service.icon}</div>
                     <h3 className="text-lg font-bold text-primary-dark">{service.title}</h3>
+                    {service.badge && (
+                      <span className="text-[10px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full whitespace-nowrap">
+                        {service.badge}
+                      </span>
+                    )}
                   </div>
                   <p className="text-gray-500 text-sm leading-relaxed mb-4">{service.description}</p>
                   <ul className="space-y-1.5">

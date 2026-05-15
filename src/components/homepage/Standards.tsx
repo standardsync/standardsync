@@ -62,6 +62,7 @@ const standards = [
   {
     number: 'EcoVadis',
     title: '지속가능성 평가 플랫폼',
+    badge: 'Econine에서 진행',
     description: '글로벌 공급망 CSR 평가 플랫폼으로 환경, 노동·인권, 윤리, 지속가능 조달 4개 테마를 평가하는 국제 표준',
     color: 'from-emerald-700 to-green-700',
   },
@@ -99,7 +100,14 @@ export function Standards() {
               <div className={`inline-flex items-center bg-gradient-to-r ${std.color} text-white text-xs font-bold px-3 py-1.5 rounded-full mb-4`}>
                 {std.number}
               </div>
-              <h3 className="text-lg font-bold text-primary-dark mb-2">{std.title}</h3>
+              <div className="flex items-center gap-2 mb-2">
+                <h3 className="text-lg font-bold text-primary-dark">{std.title}</h3>
+                {std.badge && (
+                  <span className="text-[10px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full whitespace-nowrap">
+                    {std.badge}
+                  </span>
+                )}
+              </div>
               <p className="text-sm text-gray-500 leading-relaxed">{std.description}</p>
             </div>
           ))}

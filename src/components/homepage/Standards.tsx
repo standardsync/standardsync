@@ -48,6 +48,18 @@ const standards = [
     color: 'from-lime-500 to-lime-600',
   },
   {
+    number: 'ISO 27701',
+    title: '개인정보보호경영시스템',
+    description: '개인정보의 수집, 처리, 보관에 대한 프라이버시 관리 체계를 구축하기 위한 경영시스템 표준',
+    color: 'from-green-500 to-teal-600',
+  },
+  {
+    number: 'ISO 53001',
+    title: 'UN 지속가능개발목표경영시스템',
+    description: 'UN SDGs(지속가능개발목표)를 조직의 경영시스템에 통합하여 체계적으로 이행하기 위한 표준',
+    color: 'from-emerald-600 to-teal-600',
+  },
+  {
     number: 'ISO 42001',
     title: '인공지능경영시스템',
     description: '인공지능 시스템의 책임있는 개발, 배포 및 사용을 위한 경영시스템 표준',

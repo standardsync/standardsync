@@ -215,7 +215,9 @@ export function Contact() {
                   <option>ISO 37001 (부패방지)</option>
                   <option>ISO 37301 (규범준수)</option>
                   <option>ISO 27001 (정보보안)</option>
+                  <option>ISO 27701 (개인정보보호)</option>
                   <option>ISO 42001 (인공지능)</option>
+                  <option>ISO 53001 (UNSDGs)</option>
                   <option>ISO 50001 (에너지)</option>
                   <option>EcoVadis 컨설팅</option>
                   <option>의료기기 인허가 / KGMP</option>

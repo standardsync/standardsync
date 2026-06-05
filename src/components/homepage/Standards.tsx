@@ -71,13 +71,6 @@ const standards = [
     description: '에너지 성과를 지속적으로 개선하고 에너지 효율성을 향상시키기 위한 경영시스템 표준',
     color: 'from-teal-600 to-green-600',
   },
-  {
-    number: 'EcoVadis',
-    title: '지속가능성 평가 플랫폼',
-    badge: 'Econine에서 진행',
-    description: '글로벌 공급망 CSR 평가 플랫폼으로 환경, 노동·인권, 윤리, 지속가능 조달 4개 테마를 평가하는 국제 표준',
-    color: 'from-emerald-700 to-green-700',
-  },
 ];
 
 import { StandardsBgIllust } from './illustrations';
@@ -98,7 +91,7 @@ export function Standards() {
             인증 규격 안내
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto">
-            스탠다드싱크는 아래 ISO 규격 및 EcoVadis에 대한 전문 컨설팅 서비스를 제공합니다.
+            스탠다드싱크는 아래 ISO 규격에 대한 전문 컨설팅 서비스를 제공합니다.
           </p>
         </div>
 
@@ -112,14 +105,7 @@ export function Standards() {
               <div className={`inline-flex items-center bg-gradient-to-r ${std.color} text-white text-xs font-bold px-3 py-1.5 rounded-full mb-4`}>
                 {std.number}
               </div>
-              <div className="flex items-center gap-2 mb-2">
-                <h3 className="text-lg font-bold text-primary-dark">{std.title}</h3>
-                {std.badge && (
-                  <a href="https://econine.kr/" target="_blank" rel="noopener noreferrer" className="text-[10px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full whitespace-nowrap hover:bg-emerald-100 transition-colors">
-                    {std.badge}
-                  </a>
-                )}
-              </div>
+              <h3 className="text-lg font-bold text-primary-dark mb-2">{std.title}</h3>
               <p className="text-sm text-gray-500 leading-relaxed">{std.description}</p>
             </div>
           ))}

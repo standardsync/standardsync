@@ -88,10 +88,10 @@ export function Standards() {
         <div className="text-center mb-16">
           <span className="text-primary font-semibold text-sm tracking-widest uppercase">Standards</span>
           <h2 className="text-3xl sm:text-4xl font-bold text-primary-dark mt-3 mb-4">
-            인증 규격 안내
+            인증 표준 안내
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto">
-            스탠다드싱크는 아래 ISO 규격에 대한 전문 컨설팅 서비스를 제공합니다.
+            스탠다드싱크는 아래 표준에 대한 3자 심사, 컨설팅 및 요구사항 교육 서비스를 제공합니다.
           </p>
         </div>
 

@@ -94,7 +94,6 @@ export function PrivacyPolicy({ isOpen, onClose }: PrivacyPolicyProps) {
           <p><strong>개인정보 보호책임자</strong></p>
           <p>성명: 김충열</p>
           <p>직책: 대표</p>
-          <p>연락처: 010-5315-5156</p>
           <p>이메일: auditor.kcr0607@gmail.com</p>
         </div>
       </div>

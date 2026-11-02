@@ -56,7 +56,6 @@ export function Footer({ onPrivacy, onTerms }: FooterProps) {
           <div>
             <h4 className="font-semibold mb-4 text-white/80">연락처</h4>
             <ul className="space-y-2 text-sm text-white/50">
-              <li>Tel. 010-5315-5156</li>
               <li>auditor.kcr0607@gmail.com</li>
               <li>평일 09:00 - 18:00</li>
             </ul>

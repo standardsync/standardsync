@@ -105,7 +105,6 @@ export function TermsOfService({ isOpen, onClose }: TermsOfServiceProps) {
         <p>상호: 스탠다드싱크(StandardSync)</p>
         <p>대표: 김충열</p>
         <p>소재지: (16317) 경기도 수원시 장안구 수성로245번길 21 화서역우방센트럴파크 314-1201</p>
-        <p>연락처: 010-5315-5156</p>
         <p>이메일: auditor.kcr0607@gmail.com</p>
       </div>
     </PolicyModal>

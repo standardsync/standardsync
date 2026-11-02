@@ -46,8 +46,9 @@ export function Footer({ onPrivacy, onTerms }: FooterProps) {
               <li>ISO 9001 / 14001 / 45001</li>
               <li>ISO 13485 / 22716</li>
               <li>ISO 37001 / 37301</li>
-              <li>ISO 27001 / 27701</li>
-              <li>ISO 42001 / 50001 / 53001</li>
+              <li>ISO/IEC 27001 / 27701</li>
+              <li>ISO/IEC 42001 / ISO 50001</li>
+              <li>ISO/UNDP 53001</li>
               <li>EcoVadis</li>
             </ul>
           </div>

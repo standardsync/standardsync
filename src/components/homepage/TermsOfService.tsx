@@ -40,7 +40,7 @@ export function TermsOfService({ isOpen, onClose }: TermsOfServiceProps) {
         <h3 className="font-bold text-primary-dark text-base mb-2">제4조 (서비스의 내용)</h3>
         <p className="mb-2">회사가 사이트를 통해 제공하는 서비스는 다음과 같습니다.</p>
         <ul className="list-disc pl-5 space-y-1">
-          <li>ISO 경영시스템(ISO 9001, 14001, 45001, 13485, 22716, 37001, 37301, 27001, 42001, 50001) 컨설팅 정보 제공</li>
+          <li>ISO 경영시스템(ISO 9001, 14001, 45001, 13485, 22716, 37001, 37301, ISO/IEC 27001, 27701, 42001, ISO 50001, ISO/UNDP 53001) 컨설팅 정보 제공</li>
           <li>EcoVadis 컨설팅 정보 제공</li>
           <li>의료기기 인허가(RA) 및 KGMP 관련 정보 제공</li>
           <li>온라인 상담 신청 접수</li>
